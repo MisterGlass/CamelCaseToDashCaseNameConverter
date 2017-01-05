@@ -1,0 +1,12 @@
+{
+    "name": "MisterGlass/CamelCaseToDashCaseNameConverter",
+    "description": "Converts camel case strings to/from Dash case. Heavily based on Symfonys CamelCaseToSnakeCaseNameConverter function",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/serializer": ">=2.7"
+    },
+    "autoload": {
+        "psr-4": { "MrGlass\\CamelCaseToDashCaseNameConverter\\": "src/" }
+    }
+}
