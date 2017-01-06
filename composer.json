@@ -8,5 +8,17 @@
     },
     "autoload": {
         "psr-4": { "MrGlass\\CamelCaseToDashCaseNameConverter\\": "src/" }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "sensiolabs/security-checker": "*"
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit",
+            "./vendor/bin/phpcs src tests --standard=PSR2",
+            "./vendor/bin/security-checker security:check composer.lock"
+        ]
     }
 }
