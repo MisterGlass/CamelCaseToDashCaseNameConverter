@@ -17,7 +17,7 @@
     "scripts": {
         "test": [
             "./vendor/bin/phpunit",
-            "./vendor/bin/phpcs src tests --standard=PSR2",
+            "./vendor/bin/phpcs src Tests --standard=PSR2",
             "./vendor/bin/security-checker security:check composer.lock"
         ]
     }
