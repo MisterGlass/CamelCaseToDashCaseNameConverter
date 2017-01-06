@@ -21,7 +21,10 @@ class CamelCaseToDashCaseNameConverterTest extends \PHPUnit_Framework_TestCase
     public function testInterface()
     {
         $attributeMetadata = new CamelCaseToDashCaseNameConverter();
-        $this->assertInstanceOf('Symfony\Component\Serializer\NameConverter\NameConverterInterface', $attributeMetadata);
+        $this->assertInstanceOf(
+            'Symfony\Component\Serializer\NameConverter\NameConverterInterface',
+            $attributeMetadata
+        );
     }
 
     /**
